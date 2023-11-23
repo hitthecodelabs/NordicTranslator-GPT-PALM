@@ -1,7 +1,7 @@
 # NordicTranslator-GPT-PALM
 
 ## Project Overview
-This project focuses on translating article titles and descriptions from English to Norwegian using advanced language models. We leverage two leading models: GPT (versions 3.5 and 4) and PALM (Text-Bison models), to achieve high-quality translations.
+This project focuses on translating article titles and descriptions from English to Norwegian using advanced language models. We leverage two leading models: GPT (versions 3.5 and 4) and PALM (Text-Bison models), to achieve high-quality translations focusing on eCommerce platforms.
 
 ## Methodology
 - **Input**: English text (titles and descriptions).
