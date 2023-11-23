@@ -1,0 +1,1 @@
+# NordicTranslator-GPT-PALM
