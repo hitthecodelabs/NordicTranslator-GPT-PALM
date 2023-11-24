@@ -23,6 +23,53 @@ To run this project, you need to install the following Python libraries:
 !pip install -q google-cloud-aiplatform==1.35.0
 ```
 
+## Setup and Authentication
+1. OpenAI GPT API
+   Set your OpenAI API key:
+   ```bash
+   openai.api_key = 'your-openai-api-key'
+   ```
+2. Google PALM API
+   Initialize Vertex AI with your Google Cloud project details:
+   ```bash
+   vertexai.init(project="your-gcp-project", location="your-gcp-location")
+   ```
+
+## Using the APIs
+To use both APIs, you will be sending prompts to each model and then processing their outputs.
+
+### GPT API Usage
+1. Create a prompt for the GPT model.
+2. Send the prompt to the GPT API and retrieve the response:
+
+```bash
+prompt = "your-prompt-for-gpt"
+title_messages = [{"role": "user", "content": prompt}]
+title_response = openai.ChatCompletion.create(
+    model='gpt-4',
+    messages=title_messages
+)
+json_output_gpt = title_response['choices'][0]['message']['content'].strip()
+```
+
+### PALM API Usage
+1. Set parameters for the PALM model.
+2. Send the same or a modified prompt to the PALM API and retrieve the response:
+```bash
+parameters = {
+    "candidate_count": 1,
+    "max_output_tokens": 2048,
+    "temperature": 1,
+    "top_p": 0.8,
+    "top_k": 40
+}
+model = TextGenerationModel.from_pretrained("text-bison")
+response_palm = model.predict(prompt, **parameters)
+json_output_palm = [i.text for i in response_palm.candidates]
+```
+## Combining the Outputs
+After receiving responses from both APIs, you can compare, contrast, or combine the outputs as needed for your project. This might involve additional processing or data manipulation based on your specific requirements.
+
 ## Script Overview
 The main Python script performs several key functions:
 
@@ -34,6 +81,7 @@ The main Python script performs several key functions:
    - Translation and Generation: Takes titles and descriptions, sends them to the PALM API, and retrieves translations.
    - Vertex AI Integration: Uses Vertex AI for managing model interactions.
    - Custom Functions: Includes specific text manipulations and data handling routines.
+
 
 ## Acknowledgements
 - GPT-3.5 and GPT-4 by OpenAI
