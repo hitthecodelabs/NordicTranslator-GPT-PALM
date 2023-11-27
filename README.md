@@ -63,6 +63,7 @@ parameters = {
     "top_p": 0.8,
     "top_k": 40
 }
+prompt = "your-prompt-for-gpt"
 model = TextGenerationModel.from_pretrained("text-bison")
 response_palm = model.predict(prompt, **parameters)
 json_output_palm = [i.text for i in response_palm.candidates]
