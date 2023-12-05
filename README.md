@@ -150,6 +150,6 @@ Push your branch and submit a pull request.
 We appreciate your input!
 
 ## License
-DeepFaceRegistry is open source software licensed under the MIT License. See the LICENSE file for more details.
+NordicTranslator-GPT-PALM is open source software licensed under the MIT License. See the LICENSE file for more details.
 
 
