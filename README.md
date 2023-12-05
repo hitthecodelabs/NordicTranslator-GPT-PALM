@@ -44,12 +44,11 @@ To use both APIs, you will be sending prompts to each model and then processing 
 
 ```bash
 prompt = "your-prompt-for-gpt"
-title_messages = [{"role": "user", "content": prompt}]
-title_response = openai.ChatCompletion.create(
-    model='gpt-4',
-    messages=title_messages
+title_response = client.chat.completions.create(
+    messages=[{"role": "user","content": prompt}],
+    model="gpt-4",
 )
-json_output_gpt = title_response['choices'][0]['message']['content'].strip()
+json_output_gpt = title_response.choices[0].message.content.strip()
 ```
 
 ### PALM API Usage
