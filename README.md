@@ -89,7 +89,9 @@ To use both APIs, you will be sending prompts to each model and then processing 
    
        Parameters:
        string (str): The text string to be tokenized.
-       encoding_name (str): The name of the encoding or model to use for tokenization.
+       encoding_name (str): The name of the encoding or model to use for tokenization. 
+           Encoding values: cl100k_base, r50k_base, p50k_base.
+           Model values: gpt-3.5-turbo, gpt-4.
    
        Returns:
        int: The number of tokens in the text string.
@@ -106,8 +108,9 @@ To use both APIs, you will be sending prompts to each model and then processing 
                raise e
    
        # Encode the string and return the number of tokens
-       num_tokens = len(encoding.encode(string))
-       return num_tokens
+       l_tokens = encoding.encode(string)
+       num_tokens = len(l_tokens)
+       return num_tokens, l_tokens
    ```
 
 Don't forget to install `tiktoken` by running `pip install tiktoken`.
