@@ -26,12 +26,12 @@ To run this project, you need to install the following Python libraries:
 ## Setup and Authentication
 1. OpenAI GPT API
    Set your OpenAI API key:
-   ```bash
+   ```python
    openai.api_key = 'your-openai-api-key'
    ```
 2. Google PALM API
    Initialize Vertex AI with your Google Cloud project details:
-   ```bash
+   ```python
    vertexai.init(project="your-gcp-project", location="your-gcp-location")
    ```
 
@@ -42,7 +42,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
 1. Create a prompt for the GPT model.
 2. Send the prompt to the GPT API and retrieve the response:
 
-```bash
+```python
 prompt = "your-prompt-for-gpt"
 title_response = client.chat.completions.create(
     messages=[{"role": "user","content": prompt}],
@@ -50,11 +50,46 @@ title_response = client.chat.completions.create(
 )
 json_output_gpt = title_response.choices[0].message.content.strip()
 ```
+3. Bonus: Calculating number of tokens in a prompt
+
+The function `num_tokens_from_string` takes a string (the prompt) and an encoding name. It first tries to get the encoding directly using tiktoken.get_encoding.
+
+```python
+import tiktoken
+
+def num_tokens_from_string(string: str, encoding_name: str) -> int:
+    """
+    Returns the number of tokens in a text string according to a specified encoding.
+
+    Parameters:
+    string (str): The text string to be tokenized.
+    encoding_name (str): The name of the encoding or model to use for tokenization.
+
+    Returns:
+    int: The number of tokens in the text string.
+    """
+    try:
+        # Attempt to get the encoding directly
+        encoding = tiktoken.get_encoding(encoding_name) ### cl100k_base, r50k_base, p50k_base
+    except ValueError:
+        # If direct retrieval fails, attempt to map the model name to an encoding
+        try:
+            encoding = tiktoken.encoding_for_model(encoding_name) ### gpt-3.5-turbo, gpt-4
+        except KeyError as e:
+            # If mapping also fails, raise the error
+            raise e
+
+    # Encode the string and return the number of tokens
+    num_tokens = len(encoding.encode(string))
+    return num_tokens
+```
+
+Don't forget to install `tiktoken` by running `pip install tiktoken`.
 
 ### PALM API Usage
 1. Set parameters for the PALM model.
 2. Send the same or a modified prompt to the PALM API and retrieve the response:
-```bash
+```python
 parameters = {
     "candidate_count": 1,
     "max_output_tokens": 2048,
