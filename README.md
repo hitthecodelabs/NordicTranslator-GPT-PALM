@@ -141,7 +141,7 @@ The main Python script performs several key functions:
 - PALM (Text-Bison) by Google
 
 ## Contributing
-Contributions to DeepFaceRegistry are welcome! Here's how you can contribute:
+Contributions to NordicTranslator-GPT-PALM are welcome! Here's how you can contribute:
 
 Fork the repository on GitHub.
 Create a new branch for your proposed feature or fix.
