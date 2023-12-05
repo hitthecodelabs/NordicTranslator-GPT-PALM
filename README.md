@@ -116,15 +116,7 @@ Don't forget to install `tiktoken` by running `pip install tiktoken`.
 1. Set parameters for the PALM model.
 2. Send the same or a modified prompt to the PALM API and retrieve the response:
    ```python
-   parameters = {
-       "candidate_count": 1,
-       "max_output_tokens": 2048,
-       "temperature": 1,
-       "top_p": 0.8,
-       "top_k": 40
-   }
    prompt = "your-prompt-for-gpt"
-   model = TextGenerationModel.from_pretrained("text-bison")
    response_palm = model.predict(prompt, **parameters)
    json_output_palm = [i.text for i in response_palm.candidates]
    ```
