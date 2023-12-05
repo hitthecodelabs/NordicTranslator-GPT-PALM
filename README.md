@@ -37,7 +37,7 @@ This project focuses on translating article titles and descriptions from English
     api_key=os.environ.get("OPENAI_API_KEY")
    )
    ```
-3. Google PALM API in Google Colab
+3. Google PALM API using Google Colab
    
    Initialize Vertex AI with your Google Cloud project details:
    ```python
