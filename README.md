@@ -50,7 +50,7 @@ title_response = client.chat.completions.create(
 )
 json_output_gpt = title_response.choices[0].message.content.strip()
 ```
-3. Bonus: Calculating number of tokens in a prompt
+3. Bonus: Calculating number of tokens in a prompt.
 
 The function `num_tokens_from_string` takes a string (the prompt) and an encoding name. It first tries to get the encoding directly using tiktoken.get_encoding.
 
