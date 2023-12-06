@@ -73,7 +73,8 @@ To use both APIs, you will be sending prompts to each model and then processing 
    prompt = "your-prompt-for-gpt"
    title_response = client.chat.completions.create(
        messages=[{"role": "user","content": prompt}],
-       model="gpt-4",
+       # model="gpt-4",
+       model="gpt-4-1106-preview",
    )
    json_output_gpt = title_response.choices[0].message.content.strip()
    ```
@@ -91,7 +92,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        string (str): The text string to be tokenized.
        encoding_name (str): The name of the encoding or model to use for tokenization. 
            Encoding values: cl100k_base, r50k_base, p50k_base.
-           Model values: gpt-3.5-turbo, gpt-4.
+           Model values: gpt-3.5-turbo, gpt-4, gpt-4-1106-preview
    
        Returns:
        int: The number of tokens in the text string.
