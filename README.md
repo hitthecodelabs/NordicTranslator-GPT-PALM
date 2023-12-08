@@ -18,9 +18,10 @@ This project focuses on translating article titles and descriptions from English
    To run this project, you need to install the following Python libraries:
    
    ```bash
-   !pip install openai --quiet
+   !pip install -q openai
+   !pip install -q python-dotenv
    !pip install -q "shapely<2.0.0"
-   !pip install python-telegram-bot==13.7 --quiet
+   !pip install -q python-telegram-bot==13.7
    !pip install -q google-cloud-aiplatform==1.35.0
    ```
 
@@ -31,6 +32,9 @@ This project focuses on translating article titles and descriptions from English
    ```python
    import os
    from openai import OpenAI
+   from dotenv import load_dotenv
+
+   load_dotenv()
    
    client = OpenAI(
     # api_key='your-api-key',
