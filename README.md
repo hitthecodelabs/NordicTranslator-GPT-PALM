@@ -5,7 +5,7 @@ This project focuses on translating article titles and descriptions from English
 
 ## Methodology
 - **Input**: English text (titles and descriptions).
-- **Processing**: Utilizing GPT-3.5/GPT-4 and Text-Bison models through their respective APIs.
+- **Processing**: Utilizing GPT-3.5/GPT-4 and Bison/Unicorn models through their respective APIs.
 - **Output**: Translated content in Norwegian, formatted in JSON.
 
 ## Features
