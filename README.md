@@ -78,6 +78,8 @@ To use both APIs, you will be sending prompts to each model and then processing 
    prompt = "your-prompt-for-gpt"
    title_response = client.chat.completions.create(
        messages=[{"role": "user","content": prompt}],
+       # model="gpt-3.5-turbo",
+       # model="gpt-3.5-turbo-1106",
        # model="gpt-4",
        model="gpt-4-1106-preview",
    )
