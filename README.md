@@ -58,8 +58,9 @@ This project focuses on translating article titles and descriptions from English
     "top_p": 0.8,
     "top_k": 40
    }
-   
-   model = TextGenerationModel.from_pretrained("text-bison")
+
+   # model = TextGenerationModel.from_pretrained("text-bison")
+   model = TextGenerationModel.from_pretrained("text-unicorn@001")
    ```
 
 ## Using the APIs
