@@ -58,7 +58,7 @@ This project focuses on translating article titles and descriptions from English
    parameters = {
     "candidate_count": 1,
     "max_output_tokens": 2048,
-    "temperature": 1,
+    "temperature": 0.9,
     "top_p": 0.8,
     "top_k": 40
    }
