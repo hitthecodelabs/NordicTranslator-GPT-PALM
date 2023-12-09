@@ -37,7 +37,6 @@ This project focuses on translating article titles and descriptions from English
    load_dotenv()
    
    client = OpenAI(
-    # api_key='your-api-key',
     api_key=os.environ.get("OPENAI_API_KEY")
    )
    ```
