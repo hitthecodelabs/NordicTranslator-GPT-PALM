@@ -124,7 +124,8 @@ To use both APIs, you will be sending prompts to each model and then processing 
        except ValueError:
            # If direct retrieval fails, attempt to map the model name to an encoding
            try:
-               encoding = tiktoken.encoding_for_model(encoding_name) ### gpt-3.5-turbo, gpt-4, gpt-4-1106-preview
+               ### gpt-3.5-turbo, gpt-4, gpt-4-1106-preview as encoding_name
+               encoding = tiktoken.encoding_for_model(encoding_name)
            except KeyError as e:
                # If mapping also fails, raise the error
                raise e
