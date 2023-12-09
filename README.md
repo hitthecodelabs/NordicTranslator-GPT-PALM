@@ -26,7 +26,20 @@ This project focuses on translating article titles and descriptions from English
    ```
 
 ## Setup and Authentication
-1. OpenAI GPT API
+1. ENVIRONMENT FILE
+   
+   Before using the OpenAI GPT API, you need to set up your environment with the necessary API key. Follow these steps to get started:
+
+   Create a `.env` file in your project's root directory. This file will store your OpenAI API key securely. The content of the .env file should be as follows:
+   ```makefile
+   OPENAI_API_KEY=your_api_key_here
+   ```
+   Replace your_api_key_here with your actual OpenAI API key.
+
+
+2. OpenAI GPT API
+
+   
    
    Set your OpenAI API key:
    ```python
@@ -34,8 +47,10 @@ This project focuses on translating article titles and descriptions from English
    from openai import OpenAI
    from dotenv import load_dotenv
 
+   # Load environment variables from .env file
    load_dotenv()
    
+   # Initialize the OpenAI client with your API key
    client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY")
    )
