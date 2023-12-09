@@ -136,7 +136,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        return num_tokens, l_tokens
    ```
 
-Don't forget to install `tiktoken` by running `pip install tiktoken`.
+   Don't forget to install `tiktoken` by running `pip install tiktoken`.
 
 ### PALM API Usage
 1. Set parameters for the PALM model.
