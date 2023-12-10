@@ -120,7 +120,8 @@ To use both APIs, you will be sending prompts to each model and then processing 
        """
        try:
            # Attempt to get the encoding directly
-           encoding = tiktoken.get_encoding(encoding_name) ### cl100k_base, r50k_base, p50k_base
+           ### cl100k_base, r50k_base, p50k_base as encoding_name
+           encoding = tiktoken.get_encoding(encoding_name) 
        except ValueError:
            # If direct retrieval fails, attempt to map the model name to an encoding
            try:
