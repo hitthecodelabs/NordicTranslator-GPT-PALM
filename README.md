@@ -92,7 +92,9 @@ To use both APIs, you will be sending prompts to each model and then processing 
    prompt = "your-prompt-for-gpt"
    title_response = client.chat.completions.create(
        messages=[{"role": "user","content": prompt}],
-       model="gpt-4"
+       # max_tokens=600,
+       # temperature=0.9,
+       model="gpt-4-1106-preview"
    )
    json_output_gpt = title_response.choices[0].message.content.strip()
    ```
