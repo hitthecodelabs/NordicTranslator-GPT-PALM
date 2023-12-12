@@ -162,7 +162,7 @@ The main Python script performs several key functions:
 
 ## Acknowledgements
 - GPT-3.5 and GPT-4 by OpenAI
-- PALM (Text-Bison and Text-Unicorn) by Google
+- PALM (Bison and Unicorn) by Google
 
 ## Contributing
 Contributions to NordicTranslator-GPT-PALM are welcome! Here's how you can contribute:
