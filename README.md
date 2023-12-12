@@ -144,7 +144,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
    ```python
    prompt = "your-prompt-for-gpt"
    response_palm = model.predict(prompt, **parameters)
-   json_output_palm = [i.text for i in response_palm.candidates]
+   json_output_palm = response_palm.text
    ```
 ## Combining the Outputs
 After receiving responses from both APIs, you can compare, contrast, or combine the outputs as needed for your project. This might involve additional processing or data manipulation based on your specific requirements.
