@@ -66,6 +66,7 @@ This project focuses on translating article titles and descriptions from English
    import vertexai
    from vertexai.language_models import TextGenerationModel
    from google.api_core.exceptions import ResourceExhausted
+   from vertexai.preview.generative_models import GenerativeModel, Part
    
    vertexai.init(project="your-gcp-project", location="your-gcp-location")
 
@@ -78,7 +79,8 @@ This project focuses on translating article titles and descriptions from English
    }
 
    # model = TextGenerationModel.from_pretrained("text-bison")
-   model = TextGenerationModel.from_pretrained("text-unicorn@001")
+   # model = TextGenerationModel.from_pretrained("text-unicorn@001")
+   model = GenerativeModel("gemini-pro")
    ```
 
 ## Using the APIs
@@ -143,7 +145,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
 2. Send the same or a modified prompt to the PALM API and retrieve the response:
    ```python
    prompt = "your-prompt-for-gpt"
-   response_palm = model.predict(prompt, **parameters)
+   response_palm = model.generate_content([prompt], generation_config=parameters)
    json_output_palm = response_palm.text
    ```
 ## Combining the Outputs
