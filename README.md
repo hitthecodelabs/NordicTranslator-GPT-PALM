@@ -98,7 +98,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        # temperature=0.9,
        model="gpt-4-1106-preview"
    )
-   json_output_gpt = title_response.choices[0].message.content.strip()
+   json_output_gpt = title_response.choices[0].message.content
    ```
 3. Bonus: Calculating number of tokens in a prompt.
 
