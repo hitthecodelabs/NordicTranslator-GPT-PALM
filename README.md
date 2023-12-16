@@ -1,11 +1,11 @@
 # NordicTranslator-GPT-PALM
 
 ## Project Overview
-This project focuses on translating article titles and descriptions from English to Norwegian using advanced language models. We leverage two leading models: GPT (versions 3.5 and 4) and PALM (Bison and Unicorn models), to achieve high-quality translations focusing on eCommerce platforms.
+This project focuses on translating article titles and descriptions from English to Norwegian using advanced language models. We leverage two leading models: GPT (versions 3.5 and 4) and Gemini Pro (including Bison and Unicorn models), to achieve high-quality translations focusing on eCommerce platforms.
 
 ## Methodology
 - **Input**: English text (titles and descriptions).
-- **Processing**: Utilizing GPT-3.5/GPT-4 and Bison/Unicorn models through their respective APIs.
+- **Processing**: Utilizing GPT-3.5/GPT-4 and Gemini Pro models through their respective APIs.
 - **Output**: Translated content in Norwegian, formatted in JSON.
 
 ## Features
@@ -55,7 +55,7 @@ This project focuses on translating article titles and descriptions from English
     api_key=os.environ.get("OPENAI_API_KEY")
    )
    ```
-3. Google PALM API using Google Colab
+3. Google Gemini Pro API using Google Colab
    
    Initialize Vertex AI with your Google Cloud project details:
    ```python
@@ -140,12 +140,12 @@ To use both APIs, you will be sending prompts to each model and then processing 
 > [!IMPORTANT]
    Don't forget to install `tiktoken` by running `pip install tiktoken`.
 
-### PALM API Usage
+### Gemini Pro API Usage
 1. Set parameters for the PALM model.
 2. Send the same or a modified prompt to the PALM API and retrieve the response:
    ```python
    prompt = "your-prompt-for-gpt"
-   response_palm = model.generate_content([prompt], generation_config=parameters)
+   response_palm = model.generate_content(prompt, generation_config=parameters)
    json_output_palm = response_palm.text
    ```
 ## Combining the Outputs
@@ -158,7 +158,7 @@ The main Python script performs several key functions:
    - Translation and Generation: It takes English titles, sends them to the LLM API, and retrieves Norwegian translations.
    - Data Handling: Combines CSV files, processes data, and handles errors efficiently.
    - Custom Functions: Includes functions like replace_mayusculas_noruego for specific text manipulations in Norwegian.
-2. PALM Notebook
+2. PALM (Gemini Pro) Notebook
    - Translation and Generation: Takes titles and descriptions, sends them to the PALM API, and retrieves translations.
    - Vertex AI Integration: Uses Vertex AI for managing model interactions.
    - Custom Functions: Includes specific text manipulations and data handling routines.
@@ -166,7 +166,7 @@ The main Python script performs several key functions:
 
 ## Acknowledgements
 - GPT-3.5 and GPT-4 by OpenAI
-- PALM (Bison and Unicorn) by Google
+- Gemini PRo (including Bison and Unicorn) by Google
 
 ## Contributing
 Contributions to NordicTranslator-GPT-PALM are welcome! Here's how you can contribute:
