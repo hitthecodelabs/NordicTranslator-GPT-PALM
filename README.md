@@ -137,7 +137,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        num_tokens = len(l_tokens)
        return num_tokens, l_tokens
    ```
-> [!NOTE]
+> [!IMPORTANT]
    Don't forget to install `tiktoken` by running `pip install tiktoken`.
 
 ### PALM API Usage
