@@ -145,8 +145,8 @@ To use both APIs, you will be sending prompts to each model and then processing 
 2. Send the same or a modified prompt to the PALM API and retrieve the response:
    ```python
    prompt = "your-prompt-for-gpt"
-   response_palm = model.generate_content(prompt, generation_config=parameters)
-   json_output_palm = response_palm.text
+   response_gemini = model.generate_content(prompt, generation_config=parameters)
+   json_output_palm = response_gemini.text
    ```
 ## Combining the Outputs
 After receiving responses from both APIs, you can compare, contrast, or combine the outputs as needed for your project. This might involve additional processing or data manipulation based on your specific requirements.
