@@ -141,10 +141,10 @@ To use both APIs, you will be sending prompts to each model and then processing 
    Don't forget to install `tiktoken` by running `pip install tiktoken`.
 
 ### Gemini Pro API Usage
-1. Set parameters for the PALM model.
+1. Set parameters for the Gemini model.
 2. Send the same or a modified prompt to the PALM API and retrieve the response:
    ```python
-   prompt = "your-prompt-for-gpt"
+   prompt = "your-prompt-for-gemini"
    response_gemini = model.generate_content(prompt, generation_config=parameters)
    json_output_palm = response_gemini.text
    ```
