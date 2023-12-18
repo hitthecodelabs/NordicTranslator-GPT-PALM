@@ -80,7 +80,7 @@ This project focuses on translating article titles and descriptions from English
 
    # model = TextGenerationModel.from_pretrained("text-bison")
    # model = TextGenerationModel.from_pretrained("text-unicorn@001")
-   model = GenerativeModel("gemini-pro")
+   model = GenerativeModel("gemini-pro") ### from the Gemini models family
    ```
 
 ## Using the APIs
