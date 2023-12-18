@@ -166,7 +166,7 @@ The main Python script performs several key functions:
 
 ## Acknowledgements
 - GPT-3.5 and GPT-4 by OpenAI
-- Gemini PRo (including Bison and Unicorn) by Google
+- Gemini Pro (also including Bison and Unicorn models) by Google
 
 ## Contributing
 Contributions to NordicTranslator-GPT-PALM are welcome! Here's how you can contribute:
