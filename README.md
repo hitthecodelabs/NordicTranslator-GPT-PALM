@@ -137,7 +137,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        num_tokens = len(l_tokens)
        return num_tokens, l_tokens
    ```
-> [!IMPORTANT]
+> [!NOTE]
    Don't forget to install `tiktoken` by running `pip install tiktoken`.
 
 ### Gemini Pro API Usage
