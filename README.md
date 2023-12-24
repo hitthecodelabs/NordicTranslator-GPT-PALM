@@ -159,7 +159,7 @@ The main Python script performs several key functions:
    - Data Handling: Combines CSV files, processes data, and handles errors efficiently.
    - Custom Functions: Includes functions like replace_mayusculas_noruego for specific text manipulations in Norwegian.
 2. PALM (Gemini Pro) Notebook
-   - Translation and Generation: Takes titles and descriptions, sends them to the PALM API, and retrieves translations.
+   - Translation and Generation: Takes titles and descriptions, sends them to the PALM API (models: text-bison, text-unicorn and gemini-pro), and retrieves translations.
    - Vertex AI Integration: Uses Vertex AI for managing model interactions.
    - Custom Functions: Includes specific text manipulations and data handling routines.
 
