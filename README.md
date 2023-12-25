@@ -9,8 +9,10 @@ This project focuses on translating article titles and descriptions from English
 - **Output**: Translated content in Norwegian, formatted in JSON.
 
 Useful References:
-- [OpenAI API Rate Limits](https://platform.openai.com/docs/guides/rate-limits)
-- [PALM API Rate Limits](https://cloud.google.com/vertex-ai/docs/quotas)
+- [ChatGPT API Docs](https://platform.openai.com/docs/guides/text-generation)
+- [ChatGPT API Rate Limits](https://platform.openai.com/docs/guides/rate-limits)
+- [Gemini API Docs](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models)
+- [Gemini API Rate Limits](https://cloud.google.com/vertex-ai/docs/quotas)
 
 ## Features
 - **Bilingual Translation**: Converts English text into Norwegian while preserving the original context and nuances.
