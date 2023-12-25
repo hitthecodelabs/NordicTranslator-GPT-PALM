@@ -12,6 +12,7 @@ Useful References:
 - [ChatGPT API Docs](https://platform.openai.com/docs/guides/text-generation)
 - [ChatGPT API Rate Limits](https://platform.openai.com/docs/guides/rate-limits)
 - [Gemini API Docs](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models)
+- [Gemini API Pricing](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing)
 - [Gemini API Rate Limits](https://cloud.google.com/vertex-ai/docs/quotas)
 
 ## Features
