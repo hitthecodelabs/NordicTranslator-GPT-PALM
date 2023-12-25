@@ -10,6 +10,7 @@ This project focuses on translating article titles and descriptions from English
 
 Useful References:
 - [ChatGPT API Docs](https://platform.openai.com/docs/guides/text-generation)
+- [ChatGPT API Pricing](https://openai.com/pricing)
 - [ChatGPT API Rate Limits](https://platform.openai.com/docs/guides/rate-limits)
 - [Gemini API Docs](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models)
 - [Gemini API Pricing](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing)
