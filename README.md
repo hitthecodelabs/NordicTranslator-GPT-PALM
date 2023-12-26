@@ -16,6 +16,10 @@ Useful References:
 - [Gemini API Pricing](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing)
 - [Gemini API Rate Limits](https://cloud.google.com/vertex-ai/docs/quotas)
 
+Interaction:
+- [Generative AI Playground from OpenAI](https://platform.openai.com/playground?mode=chat)
+- [Generative AI Studio from Google](https://console.cloud.google.com/vertex-ai/generative/multimodal/create/text)
+
 ## Features
 - **Bilingual Translation**: Converts English text into Norwegian while preserving the original context and nuances.
 - **Dual Model Approach**: Uses the strengths of both GPT and PALM models for translation.
