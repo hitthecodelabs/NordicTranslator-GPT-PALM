@@ -17,7 +17,7 @@ Useful References:
 - [Gemini API Rate Limits](https://cloud.google.com/vertex-ai/docs/quotas)
 
 Interaction:
-- [Generative AI Playground from OpenAI](https://platform.openai.com/playground?mode=chat)
+- [Playground from OpenAI](https://platform.openai.com/playground?mode=chat)
 - [Generative AI Studio from Google](https://console.cloud.google.com/vertex-ai/generative/multimodal/create/text)
 
 ## Features
