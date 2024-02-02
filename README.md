@@ -108,7 +108,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        messages=[{"role": "user","content": prompt}],
        # max_tokens=600,
        # temperature=0.9,
-       model="gpt-4-1106-preview"
+       model="gpt-4-0125-preview"
    )
    json_output_gpt = title_response.choices[0].message.content
    ```
@@ -126,7 +126,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        string (str): The text string to be tokenized.
        encoding_name (str): The name of the encoding or model to use for tokenization. 
            Encoding values: cl100k_base, r50k_base, p50k_base.
-           Model values: gpt-3.5-turbo, gpt-3.5-turbo-1106, gpt-4, gpt-4-1106-preview
+           Model values: gpt-3.5-turbo, gpt-3.5-turbo-1106, gpt-3.5-turbo-0125, gpt-4, gpt-4-1106-preview, gpt-4-0125-preview
    
        Returns:
        int: The number of tokens in the text string.
@@ -138,7 +138,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        except ValueError:
            # If direct retrieval fails, attempt to map the model name to an encoding
            try:
-               ### gpt-3.5-turbo, gpt-4, gpt-4-1106-preview as encoding_name
+               ### gpt-3.5-turbo, gpt-3.5-turbo-0125, gpt-4, gpt-4-1106-preview, gpt-4-0125-preview as encoding_name
                encoding = tiktoken.encoding_for_model(encoding_name)
            except KeyError as e:
                # If mapping also fails, raise the error
