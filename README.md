@@ -13,7 +13,7 @@ Useful References:
 - [ChatGPT API Pricing](https://openai.com/pricing)
 - [ChatGPT API Rate Limits](https://platform.openai.com/docs/guides/rate-limits)
 - [Gemini API Docs](https://ai.google.dev/gemini-api/docs/models/gemini-v2?hl=es-419)
-- [Gemini API Pricing](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing)
+- [Gemini API Pricing](https://ai.google.dev/pricing?hl=es-419#1_5flash)
 - [Gemini API Rate Limits](https://cloud.google.com/vertex-ai/docs/quotas)
 
 Interaction:
