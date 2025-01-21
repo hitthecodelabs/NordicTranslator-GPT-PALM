@@ -18,7 +18,7 @@ Useful References:
 
 Interaction:
 - [Playground from OpenAI](https://platform.openai.com/playground?mode=chat)
-- [Generative AI Studio from Google](https://console.cloud.google.com/vertex-ai/generative/multimodal/create/text)
+- [Generative AI Studio from Google](https://aistudio.google.com/app/prompts/new_chat?hl=es-419)
 
 ## Features
 - **Bilingual Translation**: Converts English text into Norwegian while preserving the original context and nuances.
