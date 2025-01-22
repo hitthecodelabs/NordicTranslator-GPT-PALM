@@ -18,7 +18,7 @@ Useful References:
 
 Interaction:
 - [Playground from OpenAI](https://platform.openai.com/playground?mode=chat)
-- [Generative AI Studio from Google](https://aistudio.google.com/app/prompts/new_chat?hl=es-419)
+- [Generative AI Studio from Google](https://aistudio.google.com/prompts/new_chat?model=gemini-2.0-flash-thinking-exp-01-21)
 
 ## Features
 - **Bilingual Translation**: Converts English text into Norwegian while preserving the original context and nuances.
