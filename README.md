@@ -92,7 +92,8 @@ Interaction:
 
    # model = TextGenerationModel.from_pretrained("text-bison")
    # model = TextGenerationModel.from_pretrained("text-unicorn@001")
-   model = GenerativeModel("gemini-pro") ### from the Gemini models family
+   # model = GenerativeModel("gemini-pro") ### from the Gemini models family
+   model = GenerativeModel("gemini-2.0-flash-thinking-exp-01-21") ### from the Gemini models family
    ```
 
 ## Using the APIs
