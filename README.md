@@ -108,7 +108,7 @@ To use both APIs, you will be sending prompts to each model and then processing 
        messages=[{"role": "user","content": prompt}],
        # max_tokens=600,
        # temperature=0.9,
-       model="gpt-4-0125-preview"
+       model="gpt-4o-2024-11-20"
    )
    json_output_gpt = title_response.choices[0].message.content
    ```
