@@ -22,6 +22,8 @@ chat_session = model.start_chat(
   ]
 )
 
-response = chat_session.send_message("INSERT_INPUT_HERE")
+prompt = 'Hi'
+
+response = chat_session.send_message(prompt)
 
 print(response.text)
