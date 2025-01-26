@@ -14,6 +14,7 @@ generation_config = {
 
 model = genai.GenerativeModel(
   # model_name="gemini-2.0-flash-exp",
+  # model_name="gemini-exp-1206",
   model_name="gemini-2.0-flash-thinking-exp-01-21",
   generation_config=generation_config,
 )
